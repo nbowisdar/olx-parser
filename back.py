@@ -16,4 +16,5 @@ links = [i.find('a').get('href') for i in info]
 prices = [i.text.replace('\n','') for i in soup.find(class_='fixed offers breakword redesigned').find_all('div',class_='space inlblk rel')]
 for i in range(len(prices)):
     data[links[i]] = prices[i]
+'TEST'
 

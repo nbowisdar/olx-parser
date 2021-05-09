@@ -60,7 +60,8 @@ def info(update, context):
     /start - Старт
     /check - Проверить список ссылок
     /go - Начать парсинг
-    /info - Посмотреть все возможные команды''')
+    /info - Посмотреть все возможные команды
+    /clear - Очистить список ссылок''')
 
 def clear(update, context):
     urls.clear()

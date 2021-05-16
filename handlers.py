@@ -1,4 +1,4 @@
-from back import show_last, show_all, data
+from back import show_last, X, show_all, data
 from telegram.ext import *
 import time
 urls = []
@@ -32,7 +32,7 @@ def work_flow(update, context):
     c = 0
     while True:
         for i in urls:
-            last = show_last(i)
+            last = show_all(i)
             if last != False:
                 c += 1
                 update.message.reply_text((count-c))
@@ -66,3 +66,4 @@ def info(update, context):
 def clear(update, context):
     urls.clear()
     update.message.reply_text('Список ссылок был полностью очищен!')
+

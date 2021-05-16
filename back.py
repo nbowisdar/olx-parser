@@ -6,6 +6,7 @@ headers = {
     "Accept": "*/*",
     "User-Agent": agent
 }
+X = 0
 data = {}
 def show_last(url):
     s = requests.get(url, headers).text
